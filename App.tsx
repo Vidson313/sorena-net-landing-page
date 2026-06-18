@@ -1,5 +1,6 @@
-
 import React from 'react';
+
+// Import placeholder components (to be created in the next step)
 import Header from './components/Header';
 import Hero from './components/Hero';
 import SearchWidget from './components/SearchWidget';
@@ -14,11 +15,15 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-primary text-white font-sans antialiased">
+    // Basic structure mirroring the original, Tailwind classes will be applied directly in components later
+    // The original App.tsx had: className="bg-primary text-white font-sans antialiased"
+    // This will be handled by Tailwind CDN and body classes in index.html or direct component styling.
+    <div>
       <Header />
       <main>
         <Hero />
-        <div className="container mx-auto px-4 -mt-16 sm:-mt-20 relative z-10">
+        {/* Original structure had a div wrapper for SearchWidget here for positioning */}
+        <div>
             <SearchWidget />
         </div>
         <FeaturedProducts />
